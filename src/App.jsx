@@ -8,7 +8,7 @@ import Video from './components/Video';
 const App =()=> {
   return (
     <BrowserRouter>
-    <Box >
+    <Box sx={{ backgroundColor: '#000' }}>
      <Navbar />
      <Routes>
        <Route path='/' element={<Feed/>}/>

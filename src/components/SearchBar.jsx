@@ -9,17 +9,22 @@ const SearchBar = () => {
            sx={{
             borderRadius:"25px",
             boxShadow:"none",
+            width:{sm:300},
             border:"1px solid #e3e3e3",
             pl:2,
             mr:{sm:5}
             
            }}>
+        <div style={{
+            display:"flex",
+            justifyContent:"space-between"
+        }}>
         <input
         className="search-bar"
         placeholder="search..."
         style={{
             border:"none",
-            paddingRight:"150px",
+            padding:"10px",
             outline:"none"
         }}
         value=""
@@ -33,6 +38,7 @@ const SearchBar = () => {
        }}>
         <Search/>
        </IconButton>
+        </div>
     </Paper>
   )
 }
