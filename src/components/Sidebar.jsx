@@ -1,9 +1,9 @@
-import React from 'react'
-import { Button, Stack } from '@mui/material';
+/* eslint-disable react/prop-types */
+import {  Stack } from '@mui/material';
 import { categories } from '../utils/constants';
 
-const Sidebar = () => {
-    const SelectedCategory="New";
+const Sidebar = (props) => {
+    const {SelectedCategory,setSelectedCategory}=props;
   return (
    <Stack 
    direction="row"
@@ -14,6 +14,9 @@ const Sidebar = () => {
    }}>
    {categories.map((categories)=>(
     <button className='category-btn'
+    onClick={()=>{
+        setSelectedCategory(categories.name);
+    }}
     style={{
        backgroundColor: categories.name===SelectedCategory && "red",
        color:"white"
@@ -21,7 +24,7 @@ const Sidebar = () => {
     key={categories.name}>
         <span 
         style={{
-            color:categories.name===SelectedCategory ? "while" : "red",
+            color:categories.name===SelectedCategory ? "white" : "red",
             paddingRight:"15px"
         }}>{categories.icon}</span>
         <span

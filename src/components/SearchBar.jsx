@@ -9,7 +9,7 @@ const SearchBar = () => {
            sx={{
             borderRadius:"25px",
             boxShadow:"none",
-            width:{sm:300},
+            width:{sm:350},
             border:"1px solid #e3e3e3",
             pl:2,
             mr:{sm:5}
@@ -22,11 +22,6 @@ const SearchBar = () => {
         <input
         className="search-bar"
         placeholder="search..."
-        style={{
-            border:"none",
-            padding:"10px",
-            outline:"none"
-        }}
         value=""
         onChange={()=>{}}
        />
