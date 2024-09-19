@@ -12,8 +12,7 @@ const SearchBar = () => {
             width:{sm:350},
             border:"1px solid #e3e3e3",
             pl:2,
-            mr:{sm:5}
-            
+            mr:{sm:5}, 
            }}>
         <div style={{
             display:"flex",
@@ -22,7 +21,7 @@ const SearchBar = () => {
         <input
         className="search-bar"
         placeholder="search..."
-        value=""
+        // value=""
         onChange={()=>{}}
        />
        <IconButton

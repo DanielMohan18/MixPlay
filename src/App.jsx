@@ -12,9 +12,9 @@ const App =()=> {
      <Navbar />
      <Routes>
        <Route path='/' element={<Feed/>}/>
-       <Route path='/video' element={<Video />}/>
-       <Route path='/channel' element={<Channel />}/>
-       <Route path='/search' element={<Search />}/> 
+       <Route path='/video/:id' element={<Video />}/>
+       <Route path='/channel/:id' element={<Channel />}/>
+       <Route path='/search/:searchTerm' element={<Search />}/> 
      </Routes>
     </Box>
    </BrowserRouter>  
