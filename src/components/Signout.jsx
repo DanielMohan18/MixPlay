@@ -22,7 +22,7 @@ const Signout = () => {
     try{
        setLoading(true); 
        seterrorMessage(null); 
-       const res = await fetch("http://localhost:3000/api/user/signup",{
+       const res = await fetch("/api/user/signup",{
         method:'POST',
         headers: {'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
